@@ -3,28 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Уход за дискусами</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <nav class="nav-menu">
-            <button class="menu-toggle">&#9776;</button>
+
+    <title>Аква мир</title>
+
+    <div class="logo">
+        <a style="font-size: 24px";"font-weight: bold";"margin: 0"; "flex: 1"; "text-align: center"; "margin-top: 25px"; "font-weight: 450"; "font-family: 'Montserrat', sans-serif;">Аква-мир</a>
+    </div>
+
+
+
+    <nav class="nav-menu">
+
+        <div class="nav-left">
             <ul>
-                <li><a href="about.html">О нас</a></li>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">Ассортимент</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <ul>
                 <li><a href="care.html">Уход за дискусами</a></li>
                 <li><a href="contact.html">Контакты</a></li>
             </ul>
-        </nav>
-    </header>
-    <main>
-        <h1>Уход за дискусами</h1>
-        <p>Советы по уходу за дискусами.</p>
-    </main>
-    <script>
-        document.querySelector('.menu-toggle').addEventListener('click', function () {
-            document.querySelector('.nav-menu ul').classList.toggle('active');
-        });
-    </script>
+
+
+
+
+
+    <title>Руководство по уходу за дискусами</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto px-4 py-20">
+        <h1 class="text-4xl font-bold mb-12 text-center">
+            Полное руководство по уходу за дискусами
+        </h1>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-xl font-bold mb-4">Параметры воды</h2>
+                <ul class="space-y-2 text-gray-600">
+                    <li>• Температура: 28-31°C (оптимально 29.5°C)</li>
+                    <li>• pH: 6.0-7.0 (идеально 6.5)</li>
+                    <li>• Жесткость: 1-4°dH (мягкая вода)</li>
+                    <li>• TDS: 100-200 ppm</li>
+                    <li>• Подмена воды: 20-30% каждые 2-3 дня</li>
+                    <li>• Необходима очищенная вода без хлора</li>
+                    <li>• Желательно использование RO воды</li>
+                </ul>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-xl font-bold mb-4">Кормление</h2>
+                <ul class="space-y-2 text-gray-600">
+                    <li>• 4-6 кормлений в день для молодых особей</li>
+                    <li>• 2-3 кормления для взрослых рыб</li>
+                    <li>• Основной рацион:</li>
+                    <li>  - Мотыль (живой и замороженный)</li>
+                    <li>  - Артемия (науплии для малька)</li>
+                    <li>  - Коретра, трубочник</li>
+                    <li>  - Говяжье сердце (подготовленное)</li>
+                    <li>  - Креветки и морепродукты</li>
+                    <li>• Специализированные сухие корма</li>
+                </ul>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-xl font-bold mb-4">Условия содержания</h2>
+                <ul class="space-y-2 text-gray-600">
+                    <li>• Объем аквариума: от 200 литров</li>
+                    <li>• Высота аквариума: минимум 40 см</li>
+                    <li>• Группа: от 6 особей</li>
+                    <li>• Течение: умеренное</li>
+                    <li>• Освещение: приглушенное</li>
+                    <li>• Грунт: мелкий, темный</li>
+                    <li>• Растения: неприхотливые виды</li>
+                    <li>• Коряги для укрытий</li>
+                </ul>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-xl font-bold mb-4">Здоровье и профилактика</h2>
+                <ul class="space-y-2 text-gray-600">
+                    <li>• Ежедневный осмотр:</li>
+                    <li>  - Поведение рыб</li>
+                    <li>  - Окрас и состояние чешуи</li>
+                    <li>  - Аппетит и активность</li>
+                    <li>• Карантин новых рыб: 3-4 недели</li>
+                    <li>• Профилактические обработки</li>
+                    <li>• Витаминные добавки</li>
+                    <li>• Регулярные анализы воды</li>
+                </ul>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-xl font-bold mb-4">Разведение</h2>
+                <ul class="space-y-2 text-gray-600">
+                    <li>• Нерестовик: 100-120 литров</li>
+                    <li>• Параметры для нереста:</li>
+                    <li>  - pH: 5.5-6.0</li>
+                    <li>  - Температура: 29-31°C</li>
+                    <li>  - Очень мягкая вода</li>
+                    <li>• Кондиционирование пары</li>
+                    <li>• Выкармливание мальков:</li>
+                    <li>  - Науплии артемии</li>
+                    <li>  - Циклоп</li>
+                </ul>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-xl font-bold mb-4">Оборудование</h2>
+                <ul class="space-y-2 text-gray-600">
+                    <li>• Система фильтрации:</li>
+                    <li>  - Внешний канистровый фильтр</li>
+                    <li>  - Механическая очистка</li>
+                    <li>  - Биологическая фильтрация</li>
+                    <li>• Нагреватель с терморегулятором</li>
+                    <li>• УФ-стерилизатор</li>
+                    <li>• Компрессор для аэрации</li>
+                    <li>• Автоматическая кормушка</li>
+                    <li>• Система CO2 (опционально)</li>
+                </ul>
+            </div>
+        </div>
+        <div class="mt-12 bg-white p-8 rounded-lg shadow-md">
+            <h2 class="text-2xl font-bold mb-6">Важные рекомендации</h2>
+            <div class="space-y-4 text-gray-600">
+                <p>• Дискусы крайне чувствительны к качеству воды. Необходимо поддерживать стабильные параметры и не допускать резких изменений.</p>
+                <p>• Молодые особи (до 8-9 см) требуют более частого кормления и подмен воды для быстрого роста.</p>
+                <p>• При выборе рыб обращайте внимание на их активность, окрас и форму тела. Здоровые дискусы имеют яркую окраску и округлую форму.</p>
+                <p>• Начинающим аквариумистам рекомендуется начинать с подростков размером 8-10 см, так как они более устойчивы к изменениям условий среды.</p>
+                <p>• Регулярное наблюдение за поведением рыб поможет вовремя заметить проблемы со здоровьем и предотвратить развитие заболеваний.</p>
+                <p>• Важно иметь базовый набор лекарственных препаратов для оказания первой помощи при появлении симптомов заболеваний.</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
