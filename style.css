@@ -7,86 +7,7 @@ body {
     background-color: #ffffff; /* Светло-серый фон f8f9fa */
 }
 
-header {
-    background-color: #ffffff;
-    color: black;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-.nav-menu {
-    position: relative;
-}
-
-.nav-menu ul {
-    display: flex; /* Используем flex для размещения элементов в строку */
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-menu li {
-    margin: 0 15px; /* Отступ между элементами меню */
-}
-
-.nav-menu a {
-    text-decoration: none;
-    color: #007BFF;
-}
-
-.nav-menu a:hover {
-    color: #0056b3;
-    text-decoration: underline;
-}
-
-main {
-    text-align: center;
-}
-
-.gallery {
-    display: grid; /* Используем grid для создания сетки */
-    grid-template-columns: 200px 200px; /* Два столбца */
-    gap: 10px; /* Установите разумный отступ между изображениями */
-    justify-items: right; /* Центрируем изображения по горизонтали */
-    width: fit-content; /* Устанавливаем ширину контейнера по содержимому */
-    margin: 0 auto; /* Центрируем сам контейнер */
-}
-
-.gallery img {
-    max-width: 100%; /* Устанавливаем максимальную ширину */
-    height: auto; /* Пропорциональное отображение высоты и ширины */
-    border-radius: 5px; /* Немного скругляем углы (опционально) */
-    padding: 0; /* Убираем внутренние отступы, если есть */
-    margin: 0; /* Убираем внешние отступы */
-}
-
-/* Адаптивность */
-@media (max-width: 768px) {
-    .gallery {
-        grid-template-columns: 1fr; /* Один столбец для мобильных устройств */
-    }
-}
-
-* {
-    box-sizing: border-box; /* Учитываем отступы и границы в ширине и высоте */
-}
-
-
-
-
-
-
-/* Стили для общего оформления */
-body {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff; /* Светло-серый фон */
-}
-
+/* Шапка*/
 header {
     background-color: #ffffff;
     color: black;
@@ -94,57 +15,8 @@ header {
     display: flex;
     align-items: center; /* Центрируем по вертикали */
     justify-content: center; /* Центрируем по горизонтали */
-}
-
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 0;
-    flex: 1; /* Позволяем логотипу занимать всю доступную ширину */
-    text-align: center; /* Центрируем текст */
-    margin-top: 25px;
-    font-weight: 450;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.nav-menu {
-    position: absolute; /* Размещаем навигацию поверх логотипа */
-    left: 30px; /* Положение навигации слева */
-}
-
-.nav-menu ul {
-    display: flex; /* Используем flex для размещения элементов в строку */
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-menu li {
-    margin: 0 15px; /* Отступ между элементами меню */
-}
-
-.nav-menu a {
-    text-decoration: none;
-    color: #007BFF;
-}
-
-.nav-menu a:hover {
-    color: #0056b3;
-    text-decoration: underline;
-}
-
-main {
-    text-align: center;
-
-}
-
-/* Устанавливаем размеры элементов */
-* {
-    box-sizing: border-box; /* Учитываем отступы и границы в ширине и высоте */
-}
 
 
-header {
     background-color: #ffffff;
     color: black;
     padding: 10px;
@@ -153,53 +25,26 @@ header {
     justify-content: space-between; /* Оставляем пространство между логотипом и меню */
 }
 
-.nav-menu {
-    display: flex;
-    width: 100%; /* Занимаем всю ширину */
-}
 
-.nav-left, .nav-right {
-    display: flex; /* Используем flex для размещения элементов в строку */
-}
-
-.nav-left {
-    margin-right: 1300px; /* Отодвигаем левую часть к началу */
-}
-
-.nav-right {
-    margin-left: 20px; /* Отодвигаем правую часть к концу */
-}
-
-.nav-menu ul {
-    display: flex; /* Используем flex для размещения элементов в строку */
-    list-style-type: none;
+.logo {
+    font-size: 24px;
+    font-weight: bold;
     margin: 0;
-    padding: 0;
+    flex: 1; /* Позволяем логотипу занимать всю доступную ширину */
+    text-align: center; /* Центрируем текст */
+    margin-top: 25px;
+    font-weight: 400
 }
-
-.nav-menu li {
-    margin: 10px; /* Отступ между элементами меню */
-}
-
-.nav-menu a {
-    text-decoration: none;
-    color: #007BFF;
-    color: black;
-
-}
-
-.nav-menu a:hover {
-    color: #0056b3;
-    text-decoration: underline;
-    color: black;
-}
-
 
 .nav-menu {
-    display: flex;
-    width: 100%; /* Занимаем всю ширину */
+    position: absolute; /* Размещаем навигацию поверх логотипа */
+    left: 0px; /* Положение навигации слева */
+    display: flex; /* Для горизонтального отображения меню */
+    width: 100%;
     padding-top: 20px; /* Отступ сверху для навигационного меню */
-
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 .nav-menu ul {
@@ -215,70 +60,9 @@ header {
 }
 
 .nav-menu a {
-    text-decoration: none;
     color: #007BFF;
     font-size: 16px; /* Увеличиваем размер шрифта */
-    color: black;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-}
-
-.nav-menu a:hover {
-    color: #0056b3;
-    text-decoration: underline;
-    color: black;
-    text-decoration: none;
-}
-
-
-
-.main-text {
-       font-size: 22px; /* Увеличьте размер шрифта */
-       font-family: 'Montserrat', sans-serif;
-       letter-spacing: nullpx;
-       word-spacing: nullpx;
-       font-weight: 300;
-       text-align: center;
-       text-decoration: none;
-       font-style: normal;
-       font-variant: normal;
-       text-transform: none;
-       margin-top: 40px;
-
-}
-
-.main-text2 {
-       font-size: 52px; /* Увеличьте размер шрифта */
-       font-family: 'Montserrat', sans-serif;
-       letter-spacing: nullpx;
-       word-spacing: nullpx;
-       font-weight: 600;
-       text-align: center;
-       text-decoration: none;
-       font-style: normal;
-       font-variant: normal;
-       text-transform: none;
-       margin-top: 80px;
-
-}
-
-h2 {
-    font-size: 52px;
-    font-weight: 150;
-}
-
-.nav-menu {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex; /* Для горизонтального отображения меню */
-}
-
-.nav-menu li {
-    margin: 0 15px; /* Отступы между пунктами меню */
-}
-
-.nav-menu a {
     text-decoration: none; /* Убираем подчеркивание у ссылки */
     color: #333; /* Цвет текста */
     padding: 10px 0; /* Добавим отступы сверху и снизу для более эстетичного вида */
@@ -287,51 +71,69 @@ h2 {
 }
 
 .nav-menu a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+    text-decoration: none;
     border-bottom: 2px solid #007BFF; /* Цвет полоски при наведении */
+
 }
 
+.nav-left, .nav-right {
+    display: flex; /* Используем flex для размещения элементов в строку */
+}
 
+.nav-left {
+    margin-right: 1200px; /* Отодвигаем левую часть к началу */
+}
+
+.nav-right {
+    margin-left: 20px; /* Отодвигаем правую часть к концу */
+}
+/*Полоска под панелью*/
 .nav-bottom-divider {
     height: 1px; /* Толщина полоски */
     background-color: #cccccc; /* Цвет полоски */
     width: 95%; /* Чтобы полоски занимали всю ширину контейнера */
     margin-top: 25px;
     margin-left: 50px;
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
-button {
-        margin: 20px 0;
-        padding: 20px 60px;
-        background-color: #99c2e7;
-        color: black;
-        border: none;
-        border-radius: 40px;
-        cursor: pointer;
-        font-size: 18px;
-        font-weight: 600;
-        margin-top: 40px;
-        font-family: 'Montserrat', sans-serif;
-    }
+.text {
+    margin-right: 100px; /* Отступ справа для текста */
+    flex: 1; /* Текст занимает оставшееся пространство */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    text-align: left;
+    font-weight: 250;
+}
 
-    button:hover {
-        background-color: #0056b3;
-    }
+.main-text {
+     font-size: 22px; /* Увеличьте размер шрифта */
+     font-family: 'Montserrat', sans-serif;
+     letter-spacing: nullpx;
+     word-spacing: nullpx;
+     font-weight: 300;
+     text-align: center;
+     text-decoration: none;
+     font-style: normal;
+     font-variant: normal;
+     text-transform: none;
+     margin-top: 40px;
+}
 
-
-
+.main-text2 {
+     font-size: 52px; /* Увеличьте размер шрифта */
+     font-family: 'Montserrat', sans-serif;
+     letter-spacing: nullpx;
+     word-spacing: nullpx;
+     font-weight: 600;
+     text-align: center;
+     text-decoration: none;
+     font-style: normal;
+     font-variant: normal;
+     text-transform: none;
+     margin-top: 80px;
+}
 
     .container {
         display: flex; /* Используем Flexbox для выравнивания */
@@ -339,91 +141,114 @@ button {
         margin: 0 auto; /* Центрируем контейнер */
         max-width: 1100px; /* Максимальная ширина для контейнера */
         margin-top: 200px;
-    }
-
-    .text {
-        margin-right: 100px; /* Отступ справа для текста */
-        flex: 1; /* Текст занимает оставшееся пространство */
-        font-family: 'Montserrat', sans-serif;
-        font-size: 22px;
-        text-align: left;
-        font-weight: 250;
-    }
-
-    .gallery {
-        display: grid; /* Используем grid для создания сетки */
-        grid-template-columns: repeat(2, 200px); /* Два столбца по 200px */
-        gap: 10px; /* Установите разумный отступ между изображениями */
-        justify-items: center; /* Центрируем изображения по горизонтали */
-    }
-
-    .gallery img {
-        width: 100%; /* Делаем изображения адаптивными */
-        height: auto; /* Сохраняем пропорции изображений */
-        border-radius: 5px; /* Добавляем скругление для изображений (по желанию) */
-    }
-
-
-    .gallery1 {
-        display: grid; /* Используем grid для создания сетки */
-        grid-template-columns: repeat(2, 400px); /* Два столбца по 200px */
-        gap: 10px; /* Установите разумный отступ между изображениями */
-        justify-items: center; /* Центрируем изображения по горизонтали */
-        width: fit-content; /* Устанавливаем ширину контейнера по содержимому */
-        margin: 0 auto; /* Центрируем сам контейнер */
-        margin-top: 70px;
-    }
-
-    .gallery1 img {
-        width: 100%; /* Делаем изображения адаптивными */
-        height: auto; /* Сохраняем пропорции изображений */
-        border-radius: 10px; /* Добавляем скругление для изображений (по желанию) */
-    }
-
-
-
-
-
-
-
-    .social-icons {
-        display: flex;
-        gap: 20px; /* Отступы между иконками */
-        margin-top: 20px; /* Отступ сверху */
-        justify-content: center;
-        display: flex;
-    }
-    .social-icons a {
-        text-decoration: none; /* Убираем подчеркивание ссылок */
-        color: #333; /* Цвет иконок */
-        font-size: 24px; /* Размер иконок */
-    }
-    .social-icons a:hover {
-        color: #007bff; /* Цвет иконки при наведении */
-    }
-
-
-
-
-
-
-body {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff;
 }
 
-/* Адаптивный header */
-header {
-    background-color: #ffffff;
-    color: black;
-    padding: 10px 20px;
+.gallery {
+    display: grid; /* Используем grid для создания сетки */
+    grid-template-columns: repeat(2, 200px); /* Два столбца по 200px */
+    gap: 10px; /* Установите разумный отступ между изображениями */
+    justify-items: center; /* Центрируем изображения по горизонтали */
+}
+
+.gallery img {
+    width: 100%; /* Делаем изображения адаптивными */
+    height: auto; /* Сохраняем пропорции изображений */
+    border-radius: 5px; /* Добавляем скругление для изображений (по желанию) */
+}
+
+.gallery1 {
+    display: grid; /* Используем grid для создания сетки */
+    grid-template-columns: repeat(2, 400px); /* Два столбца по 200px */
+    gap: 10px; /* Установите разумный отступ между изображениями */
+    justify-items: center; /* Центрируем изображения по горизонтали */
+    width: fit-content; /* Устанавливаем ширину контейнера по содержимому */
+    margin: 0 auto; /* Центрируем сам контейнер */
+    margin-top: 70px;
+}
+
+.gallery1 img {
+    width: 100%; /* Делаем изображения адаптивными */
+    height: auto; /* Сохраняем пропорции изображений */
+    border-radius: 10px; /* Добавляем скругление для изображений (по желанию) */
+    margin-bottom: 20px
+}
+
+.social-icons {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
+    gap: 20px; /* Отступы между иконками */
+    margin-top: 20px; /* Отступ сверху */
+    justify-content: center;
+    display: flex;
 }
+.social-icons a {
+    text-decoration: none; /* Убираем подчеркивание ссылок */
+    color: #333; /* Цвет иконок */
+    font-size: 24px; /* Размер иконок */
+}
+.social-icons a:hover {
+    color: #007bff; /* Цвет иконки при наведении */
+}
+/*фикс кнопки*/
+.custom-button {
+    margin: 20px 0;
+    padding: 20px 60px !important;
+    background-color: #99c2e7 !important;
+    color: black !important;
+    border: none !important;
+    border-radius: 40px !important;
+    cursor: pointer;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    margin-top: 40px;
+    font-family: 'Montserrat', sans-serif !important;
+}
+.custom-button:hover {
+    background-color: #0056b3 !important;
+}
+/*Футер*/
+.bg-gray-800 {
+background-color: #2d3748 /* Темно-серый фон */
+}
+.text-gray-300 {
+    color: #d1d5db; /* Светло-серый текст */
+}
+.text-gray-400 {
+    color: #cbd5e1; /* Еще более светлый серый текст */
+}
+.max-w-7xl {
+    max-width: 80rem; /* Максимальная ширина */
+}
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto; /* Центрирование по горизонтали */
+}
+.px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem; /* Горизонтальные отступы */
+}
+.py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem; /* Вертикальные отступы */
+}
+.border-t {
+    border-top-width: 1px; /* Верхняя граница */
+}
+
+.border-gray-700 {
+    border-color: #4a5568; /* Цвет границы */
+}
+
+.mt-8 {
+    margin-top: 2rem; /* Отступ сверху */
+}
+
+.pt-8 {
+    padding-top: 2rem; /* Отступ сверху */
+}
+
+
+
+
 
 
 
@@ -446,56 +271,13 @@ header {
     transition: 0.3s;
 }
 
-/* Адаптивная навигация */
-.nav-menu {
-    display: flex;
-    width: 100%;
-}
-
-.nav-left, .nav-right {
-    display: flex;
-}
-
-.nav-menu ul {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    margin-top: 27px;
-}
-
-.nav-menu li {
-    margin: 0 15px;
-}
-
-.nav-menu a {
-    text-decoration: none;
-    color: black;
-    font-size: 16px;
-    font-weight: 600;
-}
-
-/* Адаптивные стили для текста */
-.main-text {
-    font-size: 22px;
-    padding: 0 20px;
-    margin-top: 20px;
-}
-
-.main-text2 {
-    font-size: 52px;
-    padding: 0 20px;
-    margin-top: 120px;
-}
-
 /* Адаптивная галерея */
-
-
 .gallery img, .gallery1 img .galleryAs img {
     width: 100%;
     height: auto;
     border-radius: 10px;
 }
+
 /* Адаптивные стили для кнопки */
 button {
     margin: 20px auto;
@@ -508,55 +290,3 @@ button {
     .mobile-menu-button {
         display: block;
     }
-
-    .nav-menu {
-        position: fixed;
-        top: 0;
-        left: -100%;
-        width: 100%;
-        height: 100vh;
-        background: white;
-        flex-direction: column;
-        padding-top: 60px;
-        transition: 0.3s;
-    }
-
-    .nav-menu.active {
-        left: 0;
-    }
-
-    .nav-left, .nav-right {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .nav-menu ul {
-        flex-direction: column;
-        align-items: center;
-    }
-    .nav-left {
-        margin-right: 0;
-    }
-
-    .main-text2 {
-        font-size: 28px;
-    }
-
-    .main-text {
-        font-size: 16px;
-    }
-
-    .container {
-        flex-direction: column;
-        padding: 20px;
-    }
-
-    .text {
-        margin-right: 0;
-        margin-bottom: 30px;
-    }
-}
-
-.galleryAs {
-  margin-top: 150px;
-}
