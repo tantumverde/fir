@@ -322,5 +322,26 @@ button {
     font-weight: 250;
     
 }
+    
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start; /* Change to flex-end for image to be below text */
+    }
+    .text {
+        flex: 1;
+        padding: 20px;
+    }
+    .gallery {
+        flex: 1;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px;
+    }
+    img {
+        margin: 10px;
+    }
 
 }
