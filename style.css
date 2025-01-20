@@ -358,4 +358,20 @@ button {
             margin-top: 20px;
         }
 
+
+
+
+
+    .menu {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+
+
+
+    
 }
