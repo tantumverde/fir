@@ -313,5 +313,14 @@ button {
         max-width: 100%;
     }
     
+    .text {
+    margin-right: 0px; /* Отступ справа для текста */
+    flex: 1; /* Текст занимает оставшееся пространство */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    text-align: left;
+    font-weight: 250;
+    
 }
 
+}
