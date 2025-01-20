@@ -291,3 +291,12 @@ button {
 }
 
 /* Медиа-запросы для мобильных устройств */
+
+@media screen and (max-width: 768px) {
+    .header {
+        display: none;
+    }
+    .logo {
+        display:block;
+    }
+}
