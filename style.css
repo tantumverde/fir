@@ -306,6 +306,7 @@ button {
     .gallery {
         grid-template-columns: repeat(1, 1fr); /* Один столбец занимает всю доступную ширину */
         align-items: center;
+        margin-top: 300px;
     }
 
     .gallery img {
