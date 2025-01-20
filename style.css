@@ -301,4 +301,7 @@ button {
         display: block;
         text-align: center;
     }
+
+    .social-icons {
+        flex-wrap: wrap;
 }
