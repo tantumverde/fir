@@ -286,7 +286,21 @@ button {
 }
 
 /* Медиа-запросы для мобильных устройств */
-@media (max-width: 768px) {
-    .mobile-menu-button {
-        display: block;
+@media screen and (max-width: 768px) {
+    /* Стили для смартфонов */
+    .header h1 {
+        font-size: 24px;
     }
+
+    .content img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .contact-info ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+}
+
