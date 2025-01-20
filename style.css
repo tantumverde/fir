@@ -141,6 +141,7 @@ header {
         margin: 0 auto; /* Центрируем контейнер */
         max-width: 1100px; /* Максимальная ширина для контейнера */
         margin-top: 200px;
+        flex-wrap: wrap;
 }
 
 .gallery {
@@ -148,12 +149,16 @@ header {
     grid-template-columns: repeat(2, 200px); /* Два столбца по 200px */
     gap: 10px; /* Установите разумный отступ между изображениями */
     justify-items: center; /* Центрируем изображения по горизонтали */
+flex-wrap: wrap;
+    flex: 1;
+    display: flex;
 }
 
 .gallery img {
     width: 100%; /* Делаем изображения адаптивными */
     height: auto; /* Сохраняем пропорции изображений */
     border-radius: 5px; /* Добавляем скругление для изображений (по желанию) */
+margin: 10px;
 }
 
 .gallery1 {
@@ -334,6 +339,8 @@ button {
         flex-wrap: wrap;
         justify-content: space-around;
         padding: 20px;
+        order: 1;
+        margin-top: 20px
     }
     img {
         margin: 10px;
