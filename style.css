@@ -302,5 +302,15 @@ button {
         padding: 0;
         list-style: none;
     }
+
+    .gallery {
+        grid-template-columns: repeat(1, 1fr); /* Один столбец занимает всю доступную ширину */
+        align-items: center;
+    }
+
+    .gallery img {
+        max-width: 100%;
+    }
+    
 }
 
