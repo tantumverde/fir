@@ -323,12 +323,7 @@ button {
     
 }
     
-    .container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: flex-start; /* Change to flex-end for image to be below text */
-    }
+    
     .text {
         flex: 1;
         padding: 20px;
@@ -343,5 +338,17 @@ button {
     img {
         margin: 10px;
     }
+
+
+
+
+        .container {
+            flex-direction: column;
+            align-items: center;
+        }
+        .gallery {
+            order: -1;
+            margin-top: 20px;
+        }
 
 }
