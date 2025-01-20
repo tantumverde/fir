@@ -367,10 +367,13 @@ button {
 
 
 
-    .menu {
+    .header {
         display: none;
     }
 
+    .logo {
+        display: block;
+    }
     .burger {
         display: block;
         cursor: pointer;
