@@ -306,4 +306,14 @@ button {
     .social-icons {
         flex-wrap: wrap;
 }
+
+.nav-bottom-divider {
+    height: 1px; /* Толщина полоски */
+    background-color: #cccccc; /* Цвет полоски */
+    width: 55%; /* Чтобы полоски занимали всю ширину контейнера */
+    margin-top: 25px;
+    
+}
+
+    
 }
