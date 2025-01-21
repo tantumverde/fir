@@ -15,13 +15,7 @@ header {
     display: flex;
     align-items: center; /* Центрируем по вертикали */
     justify-content: center; /* Центрируем по горизонтали */
-
-
-    background-color: #ffffff;
-    color: black;
-    padding: 10px;
-    display: flex;
-    align-items: center;
+    margin-top: -30px;
     justify-content: space-between; /* Оставляем пространство между логотипом и меню */
 }
 
@@ -32,8 +26,8 @@ header {
     margin: 0;
     flex: 1; /* Позволяем логотипу занимать всю доступную ширину */
     text-align: center; /* Центрируем текст */
-    margin-top: 25px;
-    font-weight: 400
+    margin-top: 30px;
+    font-weight: 400;
 }
 
 .nav-menu {
@@ -80,21 +74,24 @@ header {
 
 .nav-left, .nav-right {
     display: flex; /* Используем flex для размещения элементов в строку */
+    margin-top: -20px;
 }
 
 .nav-left {
-    margin-right: 1200px; /* Отодвигаем левую часть к началу */
+    margin-left: 100px; /* Отодвигаем левую часть к началу */
 }
 
 .nav-right {
-    margin-left: 20px; /* Отодвигаем правую часть к концу */
+    margin-left: 1150px; /* Отодвигаем правую часть к концу */
+
+
 }
 /*Полоска под панелью*/
 .nav-bottom-divider {
     height: 1px; /* Толщина полоски */
     background-color: #cccccc; /* Цвет полоски */
     width: 95%; /* Чтобы полоски занимали всю ширину контейнера */
-    margin-top: 25px;
+    margin-top: 40px;
     margin-left: 50px;
 }
 
@@ -107,18 +104,24 @@ header {
     font-weight: 250;
 }
 
-.main-text {
-     font-size: 22px; /* Увеличьте размер шрифта */
-     font-family: 'Montserrat', sans-serif;
-     letter-spacing: nullpx;
-     word-spacing: nullpx;
-     font-weight: 300;
-     text-align: center;
-     text-decoration: none;
-     font-style: normal;
-     font-variant: normal;
-     text-transform: none;
-     margin-top: 40px;
+.main-text3 {
+    font-size: 22px; /* Увеличьте размер шрифта */
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0px; /* Задайте корректное значение */
+    word-spacing: 0px; /* Задайте корректное значение */
+    font-weight: 300;
+    text-align: justify; /* Текст выравнивается по ширине */
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    margin: 70px auto; /* Убирает верхний отступ и центрирует блок */
+    max-width: 600px; /* Установите максимальную ширину блока текста */
+    overflow: hidden; /* Прячет содержимое, если оно выходит за пределы */
+}
+
+.tight-spacing {
+  word-spacing: -2px; /* Уменьшите пробел между словами по своему усмотрению */
 }
 
 .main-text2 {
@@ -135,13 +138,27 @@ header {
      margin-top: 80px;
 }
 
+.main-text {
+     font-size: 22px; /* Увеличьте размер шрифта */
+     font-family: 'Montserrat', sans-serif;
+     letter-spacing: 0px;
+     word-spacing: 0px;
+     font-weight: 300;
+     text-align: center;
+     text-decoration: none;
+     font-style: normal;
+     font-variant: normal;
+     text-transform: none;
+     margin-top: 40px;
+     line-height: 1.5;
+}
+
     .container {
         display: flex; /* Используем Flexbox для выравнивания */
         align-items: flex-start; /* Выравниваем по верхнему краю */
         margin: 0 auto; /* Центрируем контейнер */
         max-width: 1100px; /* Максимальная ширина для контейнера */
         margin-top: 200px;
-        flex-wrap: wrap;
 }
 
 .gallery {
@@ -149,16 +166,12 @@ header {
     grid-template-columns: repeat(2, 200px); /* Два столбца по 200px */
     gap: 10px; /* Установите разумный отступ между изображениями */
     justify-items: center; /* Центрируем изображения по горизонтали */
-flex-wrap: wrap;
-    flex: 1;
-    display: flex;
 }
 
 .gallery img {
     width: 100%; /* Делаем изображения адаптивными */
     height: auto; /* Сохраняем пропорции изображений */
     border-radius: 5px; /* Добавляем скругление для изображений (по желанию) */
-margin: 10px;
 }
 
 .gallery1 {
@@ -221,8 +234,7 @@ background-color: #2d3748 /* Темно-серый фон */
     color: #cbd5e1; /* Еще более светлый серый текст */
 }
 .max-w-7xl {
-    max-width: 100%; /* Максимальная ширина */
-    margin: 0 auto;
+    max-width: 80rem; /* Максимальная ширина */
 }
 .mx-auto {
     margin-left: auto;
@@ -292,33 +304,7 @@ button {
 }
 
 /* Медиа-запросы для мобильных устройств */
-
-@media screen and (max-width: 768px) {
-    .header {
-        display: none;
-    }
-    .logo {
+@media (max-width: 768px) {
+    .mobile-menu-button {
         display: block;
-        text-align: center;
-        margin-top: 100px;
     }
-    .logo a {
-        color: #333;
-        text-decoration: none;
-        font-size: 24px;
-    }
-
-    .social-icons {
-        flex-wrap: wrap;
-}
-
-.nav-bottom-divider {
-    height: 1px; /* Толщина полоски */
-    background-color: #cccccc; /* Цвет полоски */
-    width: 80%; /* Чтобы полоски занимали всю ширину контейнера */
-    margin-top: 25px;
-    
-}
-
-    
-}
