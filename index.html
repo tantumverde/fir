@@ -12,10 +12,11 @@
 </head>
 <body></body>
 <!-- Шапка-->
-    <div class="logo">
-        <a href="#">Аква-мир</a>
-    </div>
-<header class="header">
+<div class="logo">
+    <a href="#">Аква-мир</a>
+</div>
+<header>
+
 <button class="mobile-menu-button">
         <span></span>
         <span></span>
@@ -26,7 +27,7 @@
         <div class="nav-left">
             <ul>
                 <li><a href="index.html">Главная</a></li>
-                <li><a href="about.html">Ассортимент</a></li>
+                <li><a href="assort.html">Ассортимент</a></li>
             </ul>
         </div>
         <div class="nav-right">
@@ -46,26 +47,26 @@
  <button id="scrollButton" class="custom-button">Выбрать рыбку</button>
 </div>
 
- <br><img src="discus.jpg" alt="Дискусы" style="width: 100%; max-width: 1500px; margin-top: 50px; border-radius: 10px; display: block; margin: auto;"></br>
+<br></br>
+<br><img src="jpg/discus.jpg" alt="Дискусы" style="width: 100%; max-width: 1500px; margin-top: 50px; border-radius: 10px; display: block; margin: auto;"></br>
 
 <!-- -->
 <div class="container">
     <div class="text">
-<h3 style="font-size: 42px; text-align: center;">О разведении наших дискусов</h3>
-
+<h3 style="font-size: 42px; text-align: center; font-weight: 500;">О разведении наших дискусов</h3>
+<div class="main-text3">Я стремлюсь к качеству и люблю дискусов за их
+  яркие цвета, уникальные узоры и мирный характер.
+  Процесс разведения этих рыб требует терпения и <span class="tight-spacing">внимания к деталям.
+  Я тщательно подбираю</span> условия содержания и корм для своих питомцев.</div>
+</div>
 <!-- Фото-->
 <div class="gallery">
-    <img src="discus1.jpg" alt="Дискус 1" style="width: 100%; max-width: 200px;">
-    <img src="discus2.jpg" alt="Дискус 2" style="width: 100%; max-width: 200px;">
-    <img src="discus3.jpg" alt="Дискус 3" style="width: 100%; max-width: 200px;">
-    <img src="discus4.jpg" alt="Дискус 4" style="width: 100%; max-width: 200px;">
-    <img src="discus5.jpg" alt="Дискус 5" style="width: 100%; max-width: 200px;">
-    <img src="discus6.jpg" alt="Дискус 6" style="width: 100%; max-width: 200px;">
-<h2> class="main-text">Я стремлюсь к качеству и люблю дискусов за их 
-<br>яркие цвета, уникальные узоры и мирный характер.
-</br> Процесс разведения этих рыб требует терпения и внимания к деталям. 
-Я тщательно подбираю условия содержания и корм для своих питомцев.
-</h2>
+    <img src="jpg/dis4.jpg" alt="Дискус 1" style="width: 100%; max-width: 200px;">
+    <img src="jpg/dis4.jpg" alt="Дискус 2" style="width: 100%; max-width: 200px;">
+    <img src="jpg/dis4.jpg" alt="Дискус 3" style="width: 100%; max-width: 200px;">
+    <img src="jpg/dis4.jpg" alt="Дискус 4" style="width: 100%; max-width: 200px;">
+    <img src="jpg/dis4.jpg" alt="Дискус 5" style="width: 100%; max-width: 200px;">
+    <img src="jpg/dis6.jpg" alt="Дискус 6" style="width: 100%; max-width: 200px;">
 </div>
 </div>
 
@@ -75,19 +76,19 @@
   <!-- Место для кнопки-->
   <div id="targetParagraph" style="margin-top: 0px;"></div>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-bold text-center text-gray-800 mb-12"; style="margin-top: 105px; margin-bottom: 100px;">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-12"; style="margin-top: 105px; margin-bottom: 100px; font-weight: 500; font-size: 42px;">
             Наши дискусы премиум класса
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Карточка товара 1 -->
             <div class="product-card bg-white rounded-lg shadow-md overflow-hidden">
-                <img src="https://cs10.pikabu.ru/post_img/big/2018/05/01/10/152519387111070350.jpg" alt="Голубой бриллиант" class="w-full h-48 object-cover">
+                <img src="jpg/152519387111070350.jpg" alt="Голубой бриллиант" class="w-full h-48 object-cover">
                 <div class="p-4">
                     <h3 class="text-xl font-semibold text-gray-800 mb-2">Голубой бриллиант</h3>
                     <p class="text-gray-600 mb-4">Красивая порода голубого бриллианта, идеально подходит для разведения</p>
                     <div class="flex justify-between items-center">
                         <span class="text-2xl font-bold text-blue-600">₽</span>
-                        <button id="scrollButton" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors">
+                        <button onclick="contactUs()" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors">
                             Связаться с нами
                         </button>
                     </div>
@@ -96,7 +97,7 @@
 
             <!-- Карточка товара 2 -->
             <div class="product-card bg-white rounded-lg shadow-md overflow-hidden">
-                <img src="https://rybkivbanke.ru/wp-content/uploads/2023/06/Diskus-krasnyj-valentin.jpg" alt="Красная бирюза" class="w-full h-48 object-cover">
+                <img src="jpg/Diskus-krasnyj-valentin.jpg" alt="Красная бирюза" class="w-full h-48 object-cover">
                 <div class="p-4">
                     <h3 class="text-xl font-semibold text-gray-800 mb-2">Ред валентин</h3>
                     <p class="text-gray-600 mb-4">Яркий красный узор, здоровые и активные особи</p>
@@ -111,7 +112,7 @@
 
             <!-- Карточка товара 3 -->
             <div class="product-card bg-white rounded-lg shadow-md overflow-hidden">
-                <img src="https://blog.tetra.net/ru/ru/wp-content/uploads/2021/02/diskus-krasnyj.jpg" alt="Золотой дискус" class="w-full h-48 object-cover">
+                <img src="jpg/diskus-krasnyj.jpg" alt="Золотой дискус" class="w-full h-48 object-cover">
                 <div class="p-4">
                     <h3 class="text-xl font-semibold text-gray-800 mb-2">Золотой дискус</h3>
                     <p class="text-gray-600 mb-4">Премиальная золотая порода с отличной генетикой</p>
@@ -125,7 +126,7 @@
             </div>
             <!-- Карточка товара 4 -->
             <div class="product-card bg-white rounded-lg shadow-md overflow-hidden">
-                <img src="https://poknok.art/uploads/posts/2022-11/thumbs/1668513012_64-poknok-art-p-diskus-zmeya-73.jpg" alt="Золотой дискус" class="w-full h-48 object-cover">
+                <img src="jpg/1668513012_64-poknok-art-p-diskus-zmeya-73.jpg" alt="Золотой дискус" class="w-full h-48 object-cover">
                 <div class="p-4">
                     <h3 class="text-xl font-semibold text-gray-800 mb-2">Змеиная кожа</h3>
                     <p class="text-gray-600 mb-4">Ценят этот вид за шикарную окраску и необычную, мелкую чешую</p>
@@ -139,10 +140,10 @@
             </div>
             <!-- Карточка товара 5 -->
             <div class="product-card bg-white rounded-lg shadow-md overflow-hidden">
-                <img src="https://poknok.art/uploads/posts/2022-10/thumbs/1666830652_34-poknok-art-p-diskus-leopard-34.jpg" alt="Золотой дискус" class="w-full h-48 object-cover">
+                <img src="jpg/1666830652_34-poknok-art-p-diskus-leopard-34.jpg" alt="Золотой дискус" class="w-full h-48 object-cover">
                 <div class="p-4">
                     <h3 class="text-xl font-semibold text-gray-800 mb-2">Супер пантеры</h3>
-                    <p class="text-gray-600 mb-4">Эти рыбы отличаются красивым узором и могут иметь различные цветовые вариации</p>
+                    <p class="text-gray-600 mb-4">Эти рыбы имеют различные цветовые вариации и красивый узор</p>
                     <div class="flex justify-between items-center">
                         <span class="text-2xl font-bold text-blue-600">₽</span>
                         <button onclick="contactUs()" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors">
@@ -153,7 +154,7 @@
             </div>
     <!-- Карточка товара 6 -->
     <div class="product-card bg-white rounded-lg shadow-md overflow-hidden">
-        <img src="https://fotkiflo.ru/wp-content/uploads/diskus-zheltyi-1.webp" alt="Миллениум голд" class="w-full h-48 object-cover">
+        <img src="jpg/diskus-zheltyi-1.webp" alt="Миллениум голд" class="w-full h-48 object-cover">
         <div class="p-4">
             <h3 class="text-xl font-semibold text-gray-800 mb-2">Миллениум голд</h3>
             <p class="text-gray-600 mb-4">Одна из самых ярких и привлекательных разновидностей дискусов</p>
@@ -168,7 +169,7 @@
 </div>
 </div>
 </section>
-<h1 style="margin-top: 200px; font-size: 42px; font-weight: bold; margin-bottom: 30px; text-align: center;">Напишите нам</h1>
+<h1 style="margin-top: 200px; font-size: 42px; font-weight: 450; margin-bottom: 30px; text-align: center;">Свяжитесь с нами</h1>
 <!-- Соц-сети-->
 <div class="social-icons">
     <a href="https://wa.me/ВашНомерТелефона" target="_blank" title="WhatsApp">
@@ -224,5 +225,4 @@
           </div>
       </div>
   </footer>
-
 </html>
