@@ -315,7 +315,7 @@ text-align: center;
     flex-wrap: wrap;
     text-align: center;
     display: grid; /* Используем grid для создания сетки */
-    grid-template-columns: repeat(2, 200px);
+    grid-template-columns: repeat(1, 100%);
     /*grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));*/
     gap: 10px; /* Установите разумный отступ между изображениями */
     justify-content: center; /* Центрируем изображения по горизонтали */
@@ -324,6 +324,7 @@ text-align: center;
 }
 .gallery img {
     margin: 0 auto;
+    object-fit: cover;
 }
 
 
