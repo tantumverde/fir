@@ -321,10 +321,12 @@ text-align: center;
     justify-content: center; /* Центрируем изображения по горизонтали */
     max-width: 100px;
     margin: 0 auto;
+    width: 50%;
 }
 .gallery img {
     margin: 0 auto;
     object-fit: cover;
+    width: 50%;
 }
 
 
