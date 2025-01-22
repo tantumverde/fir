@@ -343,5 +343,8 @@ text-align: center;
     width: 90%; /* Чтобы полоски занимали всю ширину контейнера */
     margin-left: 5%;
 }
-    
+
+.main-text3 {
+margin: 0 auto;
+}
 }
