@@ -317,4 +317,11 @@ button {
 text-align: center;
 }
 
+.gallery {
+    display: block;
+}
+.gallery img {
+    display: block;
+    margin: 0 auto 10px;
+}
 }
