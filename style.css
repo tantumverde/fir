@@ -320,6 +320,10 @@ text-align: center;
 .gallery {
     display: block;
     text-align: center;
+    display: grid; /* Используем grid для создания сетки */
+    grid-template-columns: repeat(1, 200px); /* Два столбца по 200px */
+    gap: 10px; /* Установите разумный отступ между изображениями */
+    justify-items: center; /* Центрируем изображения по горизонтали */
 }
 .gallery img {
     display: block;
