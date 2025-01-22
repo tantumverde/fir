@@ -107,8 +107,8 @@ header {
 .main-text3 {
     font-size: 22px; /* Увеличьте размер шрифта */
     font-family: 'Montserrat', sans-serif;
-    letter-spacing: 0px; /* Задайте корректное значение */
-    word-spacing: 0px; /* Задайте корректное значение */
+    letter-spacing: normal; /* Задайте корректное значение */
+    word-spacing: normal; /* Задайте корректное значение */
     font-weight: 300;
     text-align: justify; /* Текст выравнивается по ширине */
     text-decoration: none;
@@ -121,7 +121,7 @@ header {
 }
 
 .tight-spacing {
-  word-spacing: -2px; /* Уменьшите пробел между словами по своему усмотрению */
+  word-spacing: -3px; /* Уменьшите пробел между словами по своему усмотрению */
 }
 
 .main-text2 {
@@ -351,6 +351,8 @@ text-align: center;
     text-align: justify;
     padding-left: 20px; /* Отступ слева */
     padding-right: 20px; /* Отступ справа */
+    letter-spacing: normal; /* Задайте корректное значение */
+    word-spacing: normal;
 }
 
 .container {
