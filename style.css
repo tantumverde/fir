@@ -321,7 +321,7 @@ text-align: center;
     
     flex-wrap: wrap;
     text-align: center;
-    display: grid; /* Используем grid для создания сетки */
+    display: flex; /* Используем grid для создания сетки */
      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
     gap: 10px; /* Установите разумный отступ между изображениями */
     justify-content: center; /* Центрируем изображения по горизонтали */
