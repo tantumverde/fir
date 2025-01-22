@@ -308,3 +308,7 @@ button {
     .mobile-menu-button {
         display: block;
     }
+
+.header {
+    display: none;
+}
