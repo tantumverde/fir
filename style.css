@@ -319,6 +319,7 @@ text-align: center;
 
 .gallery {
     display: block;
+    text-align: center;
 }
 .gallery img {
     display: block;
