@@ -103,7 +103,7 @@ header {
     letter-spacing: normal; /* Задайте корректное значение */
     word-spacing: normal; /* Задайте корректное значение */
     font-weight: 300;
-    text-align: justify; /* Текст выравнивается по ширине */
+     /* Текст выравнивается по ширине */
     text-decoration: none;
     font-style: normal;
     font-variant: normal;
