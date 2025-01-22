@@ -327,7 +327,7 @@ text-align: center;
     justify-content: center; /* Центрируем изображения по горизонтали */
 }
 .gallery img {
-    margin: 0;
+    margin: 0 auto;
 }
 
 .container {
@@ -369,4 +369,5 @@ margin: 0 auto;
         align-items: center;
         text-align: center;
         
+}
 }
