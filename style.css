@@ -318,11 +318,11 @@ text-align: center;
 }
 
 .gallery {
-    
+
     flex-wrap: wrap;
     text-align: center;
     display: flex; /* Используем grid для создания сетки */
-     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 10px; /* Установите разумный отступ между изображениями */
     justify-content: center; /* Центрируем изображения по горизонтали */
 }
@@ -345,19 +345,21 @@ text-align: center;
 }
 
 .main-text3 {
-margin: 0 auto;
+    margin: 0 auto;
     max-width: 400px;
     overflow: hidden;
     text-align: justify;
+    padding-left: 20px; /* Отступ слева */
+    padding-right: 20px; /* Отступ справа */
 }
 
 .container {
-        display: flex; /* Используем Flexbox для выравнивания */
-        justify-content: center; /* Выравниваем по верхнему краю */
-        align-items: flex-start;
+    display: flex; /* Используем Flexbox для выравнивания */
+    justify-content: center; /* Выравниваем по верхнему краю */
+    align-items: flex-start;
     margin: 0 auto; /* Центрируем контейнер */
-        max-width: 1100px; /* Максимальная ширина для контейнера */
-        margin-top: 200px;
+    max-width: 1100px; /* Максимальная ширина для контейнера */
+    margin-top: 200px;
 }
 
     .social-icons {
@@ -366,8 +368,8 @@ margin: 0 auto;
     margin-top: 20px; /* Отступ сверху */
     justify-content: center;
     flex-direction: column;
-        align-items: center;
-        text-align: center;
-        
+    align-items: center;
+    text-align: center;
+
 }
 }
