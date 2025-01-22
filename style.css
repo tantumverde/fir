@@ -321,10 +321,13 @@ text-align: center;
 
     flex-wrap: wrap;
     text-align: center;
-    display: flex; /* Используем grid для создания сетки */
-     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    display: grid; /* Используем grid для создания сетки */
+    grid-template-columns: repeat(2, 200px);
+    /*grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));*/
     gap: 10px; /* Установите разумный отступ между изображениями */
     justify-content: center; /* Центрируем изображения по горизонтали */
+    max-width: 100px;
+    margin: 0 auto;
 }
 .gallery img {
     margin: 0 auto;
@@ -345,14 +348,7 @@ text-align: center;
 }
 
 .main-text3 {
-    margin: 0 auto;
-    max-width: 400px;
-    overflow: hidden;
-    text-align: justify;
-    padding-left: 20px; /* Отступ слева */
-    padding-right: 20px; /* Отступ справа */
-    letter-spacing: normal; /* Задайте корректное значение */
-    word-spacing: normal;
+
 }
 
 .container {
