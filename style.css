@@ -336,4 +336,12 @@ text-align: center;
     align-items: center;
     justify-content: center;
 }
+
+.nav-bottom-divider {
+    height: 1px; /* Толщина полоски */
+    background-color: #cccccc; /* Цвет полоски */
+    width: 70%; /* Чтобы полоски занимали всю ширину контейнера */
+    margin-left: 5%;
+}
+    
 }
