@@ -95,14 +95,7 @@ header {
     margin-left: 50px;
 }
 
-.text {
-    margin-right: 100px; /* Отступ справа для текста */
-    flex: 1; /* Текст занимает оставшееся пространство */
-    font-family: 'Montserrat', sans-serif;
-    font-size: 22px;
-    text-align: left;
-    font-weight: 250;
-}
+
 
 .main-text3 {
     font-size: 22px; /* Увеличьте размер шрифта */
@@ -153,7 +146,7 @@ header {
      line-height: 1.5;
 }
 
-    .container {
+.container {
         display: flex; /* Используем Flexbox для выравнивания */
         align-items: flex-start; /* Выравниваем по верхнему краю */
         margin: 0 auto; /* Центрируем контейнер */
@@ -333,12 +326,6 @@ text-align: center;
     margin: 0 auto;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
 
 .nav-bottom-divider {
     height: 1px; /* Толщина полоски */
@@ -348,13 +335,15 @@ text-align: center;
 }
 
 .main-text3 {
-
+padding-left: 90px;
+font-family: 'Montserrat', sans-serif;
 }
 
 .container {
     display: flex; /* Используем Flexbox для выравнивания */
     justify-content: center; /* Выравниваем по верхнему краю */
-    align-items: flex-start;
+    align-items: center;
+    flex-direction: column;
     margin: 0 auto; /* Центрируем контейнер */
     max-width: 1100px; /* Максимальная ширина для контейнера */
     margin-top: 200px;
@@ -368,6 +357,10 @@ text-align: center;
     flex-direction: column;
     align-items: center;
     text-align: center;
-
 }
+
+
+
+
+
 }
