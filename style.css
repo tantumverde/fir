@@ -346,5 +346,17 @@ text-align: center;
 
 .main-text3 {
 margin: 0 auto;
+    max-width: 400px;
+    overflow: hidden;
 }
+
+.container {
+        display: flex; /* Используем Flexbox для выравнивания */
+        justify-content: center; /* Выравниваем по верхнему краю */
+        align-items: flex-start;
+    margin: 0 auto; /* Центрируем контейнер */
+        max-width: 1100px; /* Максимальная ширина для контейнера */
+        margin-top: 200px;
+}
+
 }
