@@ -319,7 +319,7 @@ text-align: center;
     /*grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));*/
     gap: 10px; /* Установите разумный отступ между изображениями */
     justify-content: center; /* Центрируем изображения по горизонтали */
-    max-width: 100px;
+    max-width: 300px;
     margin: 0 auto;
     width: 150px;
 }
