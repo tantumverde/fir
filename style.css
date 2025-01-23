@@ -321,7 +321,7 @@ text-align: center;
     justify-content: center; /* Центрируем изображения по горизонтали */
     max-width: 300px;
     margin: 0 auto;
-    width: 300px;
+    width: 100px;
 }
 .gallery img {
     margin: 0 auto;
