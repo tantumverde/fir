@@ -328,6 +328,7 @@ text-align: center;
     object-fit: cover;
     max-width: 100%;
     height: auto;
+    padding: 0 10px;
 }
 
 
