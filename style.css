@@ -315,18 +315,19 @@ text-align: center;
     flex-wrap: wrap;
     text-align: center;
     display: grid; /* Используем grid для создания сетки */
-    grid-template-columns: repeat(2, 100%);
+    grid-template-columns: 1fr 1fr;
     /*grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));*/
     gap: 10px; /* Установите разумный отступ между изображениями */
     justify-content: center; /* Центрируем изображения по горизонтали */
-    max-width: 300px;
+    
     margin: 0 auto;
-    width: 100px;
+    
 }
 .gallery img {
     margin: 0 auto;
     object-fit: cover;
-    width: 150px;
+    max-width: 100%;
+    height: auto;
 }
 
 
